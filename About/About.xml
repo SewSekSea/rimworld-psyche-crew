@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Crew</name>
+  <author>T&amp;B Modding</author>
+  <packageId>crew.factions</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+    <li>1.7</li>
+  </supportedVersions>
+  <description>Your colony is not one group. It never was.
+
+Colonists quietly sort themselves into crews: clusters of people who actually rate each other. Nobody chooses a crew and you cannot assign one. They form out of who gets on with whom, and they shift as that changes.
+
+Crews
+- Three or more colonists who all think well of each other become a crew, named for whoever the rest respect most.
+- Being in one steadies a person. Being the only one outside every crew is its own kind of lonely.
+- You get told when a crew forms, when it falls apart, and when its leadership changes.
+
+Rivals
+- Two crews whose members dislike each other become rivals. After that, running with the wrong crowd is reason enough on its own to think less of someone.
+- Rivals are far likelier to end up in a social fight.
+
+Backing your own
+- Hurt or insult someone and you answer to their whole crew, not just to them.
+
+Disrespect
+- An insult from a rival is not forgotten on its own schedule. It sits there as disrespect until it is answered.
+- Winning a social fight with them settles it. So does their crew falling apart.
+
+Works with the others: a Sociopath runs with a crew without ever feeling loyal to it. A Machiavellian sits above the rivalries and enjoys them. Colonists who became battle-bonded in Squad count as crew material whatever else they think.
+
+This mod only changes how colonists feel about each other. It never changes how anyone aims, works or chooses a job.
+
+With thanks to SeveralPuffins, whose Rumours and Deception explored colony cliques back in 2016 and was well ahead of its time. It is no longer updated for current versions. This mod is a fresh build that shares none of its code or content.
+
+Requires Harmony. Safe to add to an existing save. RimWorld 1.6, no DLC needed.</description>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>Ludeon.RimWorld</li>
+    <li>sociopath.trait</li>
+    <li>machiavelli.trait</li>
+    <li>squad.morale</li>
+  </loadAfter>
+</ModMetaData>

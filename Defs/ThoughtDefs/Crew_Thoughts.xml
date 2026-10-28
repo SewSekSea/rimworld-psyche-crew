@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Having people. Stage picked in code from the size of the crew. -->
+  <ThoughtDef>
+    <defName>CR_InACrew</defName>
+    <workerClass>Crew.ThoughtWorker_InACrew</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>I've got people here</label>
+        <description>There are two or three of them I would put myself out for, and I am fairly sure it runs both ways.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>we look after our own</label>
+        <description>There is a proper little group of us now. Whatever else this place is, I am not in it alone.</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Everyone else has people. You don't. -->
+  <ThoughtDef>
+    <defName>CR_OnMyOwn</defName>
+    <workerClass>Crew.ThoughtWorker_OnMyOwn</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>nobody here is mine</label>
+        <description>They have all worked out who they sit with. I did not get the message, and I am not going to ask.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Running with the wrong crowd is reason enough on its own. -->
+  <ThoughtDef>
+    <defName>CR_RunsWithThem</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>Crew.ThoughtWorker_RunsWithThem</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>runs with that lot</label>
+        <baseOpinionOffset>-22</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Hurt one of ours and you answer to all of us. -->
+  <ThoughtDef>
+    <defName>CR_TouchedOneOfOurs</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>25</durationDays>
+    <stackLimit>300</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <stackedEffectMultiplier>0.8</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>went after one of ours</label>
+        <baseOpinionOffset>-24</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- An insult from a rival. It does not fade on its own; it waits to be answered. -->
+  <ThoughtDef>
+    <defName>CR_Disrespected</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <showBubble>true</showBubble>
+    <durationDays>120</durationDays>
+    <stackLimit>300</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>disrespected me</label>
+        <baseOpinionOffset>-30</baseOpinionOffset>
+      </li>
+    </stages>
+    <thoughtToMake>CR_DisrespectedMood</thoughtToMake>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>CR_DisrespectedMood</defName>
+    <durationDays>10</durationDays>
+    <stackLimit>4</stackLimit>
+    <stackedEffectMultiplier>0.85</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>that is not going to stand</label>
+        <description>They said it in front of people. Everyone heard it. It sits there until something is done about it.</description>
+        <baseMoodEffect>-7</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- It was answered. -->
+  <ThoughtDef>
+    <defName>CR_Settled</defName>
+    <durationDays>8</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>settled it</label>
+        <description>It was dealt with, in front of the same people who saw it happen. That is the end of it.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

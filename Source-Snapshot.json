@@ -1,0 +1,81 @@
+{
+  "name": "Crew",
+  "packageId": "crew.factions",
+  "assemblyName": "Crew",
+  "repositoryName": "rimworld-psyche-crew",
+  "workshopId": "3805155579",
+  "metadataVersions": [
+    "1.6",
+    "1.7"
+  ],
+  "originalSourceUnit": "Psyche Mods/Crew",
+  "sourceSnapshotUtc": "2026-10-28T17:10:11.216Z",
+  "sourceFileFingerprints": [
+    {
+      "path": "About/About.xml",
+      "sha256": "60FDF68C6F5C8852878CED992B07990CB12F318FAD482EBB20823BDAFC8F7E84",
+      "bytes": 2443
+    },
+    {
+      "path": "About/Preview.png",
+      "sha256": "0A982A3D33B7B3FBF0008736A4AF67D4EA7C78E156B2A99F1A0685C2F6A838B6",
+      "bytes": 81058
+    },
+    {
+      "path": "About/PublishedFileId.txt",
+      "sha256": "1927F2562764FC54E1A096124DC0723BFE596F4E5140C98A69A004B4EEE422A2",
+      "bytes": 10
+    },
+    {
+      "path": "Defs/MainButtonDefs/Crew_MainButton.xml",
+      "sha256": "3F1D7B59F17580C2E9BFF1659B9B53F0711DE150FE037E08144B83971BC0DE6D",
+      "bytes": 729
+    },
+    {
+      "path": "Defs/ThoughtDefs/Crew_Thoughts.xml",
+      "sha256": "0D1330FDD3920FDACCE90247C84BB1A08FB1AAEEA35023F3E65B68525B62BD81",
+      "bytes": 3961
+    },
+    {
+      "path": "Source/Crew/Crew.csproj",
+      "sha256": "923D1BC794CA886374488C0407D357850F255C532E4FBC915A9A29E30F1AEFDC",
+      "bytes": 2239
+    },
+    {
+      "path": "Source/Crew/CrewCore.cs",
+      "sha256": "2D58417461951A6B1573761071B62A746E87D0255715CDD00B0C930F4AA33FA4",
+      "bytes": 5024
+    },
+    {
+      "path": "Source/Crew/Crews.cs",
+      "sha256": "EAA6B99CA56F719C0C8FD87E558AEE636FA3C70032EA45257A8AFC4B239D4982",
+      "bytes": 16610
+    },
+    {
+      "path": "Source/Crew/CrewUI.cs",
+      "sha256": "A51986E1913D24EE5B715596D3670E0E5CDA1D375644CDF62244B11C155DC04B",
+      "bytes": 8401
+    },
+    {
+      "path": "Source/Crew/HarmonyPatches.cs",
+      "sha256": "24AE7DE7E1805A137E313314DE737F47CDACC87538FCFA3FEAA921A9B36B1E0A",
+      "bytes": 5303
+    },
+    {
+      "path": "Source/Crew/Settings.cs",
+      "sha256": "F0D58763EB4B7DBE3738852243664A03AA0416A5CD07B18AC2BA29B5472DBA72",
+      "bytes": 4111
+    },
+    {
+      "path": "Source/Crew/Workers.cs",
+      "sha256": "3B2F652523BD352B7676162FD14FA992F0D40B730756C9B6FCBB3750AB6AAF87",
+      "bytes": 2038
+    }
+  ],
+  "stagedProjectAdjustments": [],
+  "build16": "NOT_RUN_THIS_PASS",
+  "build17": "COMPILED_AGAINST_LOCAL_1.7_API",
+  "nativePlaytest": "NOT_RUN_THIS_PUBLICATION_PASS",
+  "gameplaySourceModified": false,
+  "compiled17SHA256": "5BD93686F9D36C0C96A1D95686B439076DB0B7878483A34DB7D0A48EA857DF1C"
+}

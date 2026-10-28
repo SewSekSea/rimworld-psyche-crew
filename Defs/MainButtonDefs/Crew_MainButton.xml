@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--
+    The overview tab. Ordered after the vanilla tabs so it does not push anything around: it sits
+    between Factions and Menu, and every vanilla button stays where players expect it.
+
+    Always visible, including before any crew has formed. The window explains what crews are when
+    it is empty, and that is the moment a new player most needs telling.
+  -->
+  <MainButtonDef>
+    <defName>CR_Crews</defName>
+    <label>crews</label>
+    <description>Who runs with whom, and which crews are at odds.</description>
+    <tabWindowClass>Crew.MainTabWindow_Crews</tabWindowClass>
+    <order>95</order>
+    <validWithoutMap>false</validWithoutMap>
+  </MainButtonDef>
+
+</Defs>
